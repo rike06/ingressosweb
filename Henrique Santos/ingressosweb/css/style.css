@@ -1,0 +1,15 @@
+/* aula 12 - 17/05/2022*/
+body ul{
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+a:hover {
+    background: rgba(red, green, blue, alpha);
+}
+#logo
+   font-size:1.srem

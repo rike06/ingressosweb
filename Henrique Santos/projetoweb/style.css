@@ -1,0 +1,20 @@
+
+    /*Esses comandos são utilizados para definir o tamanho e a cor da div*/
+ .left {
+     width: 40%;
+     height: 450px;
+    /* background-color:*/
+    /*borda na div*/
+    /*cor de fundo*/
+    /*dashed coloca a borda*/
+    border: 4px #000 dashed;
+    float: left;
+    margin-left: 10%;
+ }
+ .right {
+     width: 40%;
+     height: 450px;
+    /* background-color:rgb(253, 0, 0) ;*/
+     float: right;
+     margin-right: 10%;
+ }
