@@ -97,3 +97,44 @@ a:hover{
     font-weight: bold;
     margin: 30px 0;
 }
+
+/* CSS novidades*/
+
+.novidades .text body{
+    width:80% ;
+    margin: 70px auto;
+}
+
+.novidades h2{
+    color: aliceblue;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p{
+    color: #505050;
+}
+.novidades a{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    padding: 0px 12px;
+    background-color: black;
+    font-weight: 400;
+}
+/* CSS Galeria*/
+.galeria{
+    margin: 60px auto 20px;
+}
+.galeria h2{
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
