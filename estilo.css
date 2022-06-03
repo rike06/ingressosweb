@@ -114,3 +114,141 @@ body {
     .mouse{
         width: 80px;
     }
+    .sobre-projetos {
+        background-color: black;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .sobre-projetos h2 {
+        color: red;
+        font-size: 50px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .conteudo-sobre {
+        display: flex;
+        justify-content: space-between;
+    }
+    .imagem-sobre {
+        width: 40%;
+    }
+
+    .texto-participantes {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .conteudo-sobre h3 {
+        color: #FFAF00;
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    .texto-sobre p {
+        color: #FFFFFF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: justify;
+    }
+
+    .info {
+        background-image: url(../img/); background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 40px 0;
+    }
+
+    .conteudo-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-info {
+        font-family: 'Courier New', Courier, monospace;
+        text-transform: uppercase;
+        margin: 20px;
+    }
+    .card-info h3 {
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+
+    .card-info p {
+        color: rebeccapurple;
+        font-size: 22px;
+        font-weight: 600;
+        border: solid 2px rebeccapurple;
+        width: 250px;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .endereco {
+        padding: 40px 0;
+        background-image: url();
+    }
+
+    .conteudo-endereco {
+        margin: 0 auto;
+        max-width: 850px;
+        position: relative;
+    }
+
+    .conteudo-endereco h2 {
+        color: #FFAF00;
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .texto-endereco {
+        color: rebeccapurple;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #010010;
+        border: solid 2px rebeccapurple;
+        padding: 55px 53px;
+    }
+
+    .texto-endereco p {
+        width: 400px;
+        font-size: 20px;
+    }
+
+   .container-mapa {
+       position: relative;
+       overflow: hidden;
+       width: 100%;
+       padding-top: 20%;
+   }
+
+   .mapa-responsivo {
+       position: absolute;
+       margin-top: 10px;
+       top: 0;
+       left: 0;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       height: 100%;
+   }
+
+    .mapa-center {
+        width: auto;
+
+    }
+
+    footer {
+        height: 90px;
+        background-color: red;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer span {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 90%;
+        text-align: center;
+    }
