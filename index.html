@@ -1,302 +1,87 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="img/ao.webp">
+    <title>..:: Landing Page ::..</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/layout_smartphone.css">
+    <script src="https://kit.fontawesome.com/b7a0eff3c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--inicio menu-->
-    <header  id="header">
-        <a id="logo" href="index.html"><img src="bando.jpeg"></a>  
-        <nav id="nav">
-            <button aria-label="abrir menu" id="bnt-mobile"aria-haspopup="true" aria-controls="menu"  aria-expanded="false">
-                <span id="hamburguer"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a class="linkMenu" href="index.html">jogos</a></li>
-                <li><a class="linkMenu" href="ingressos.html">ingressos</a></li>
-                <li><a class="linkMenu" href="agenda.html">agenda</a></li>
-                <!--fim menu-->
-            </header>
-<!--inicio Carrosel Página principal-->
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="700">
-            <img src="" class="d-block w-100" alt="banner 1"/>
-        
-        <div class="carousel-item" data-bs-interval="700">
-            <img src="images.jpg" class="d-block w-100" alt="banner 2"/>
+    <header>
+        <div class="container-grid conteudo-header">
+            <img class="logo" src="./img/logos_senai_branco.png" alt="Logo senai">
+            <nav id="menu-header" class="menu-header">
+                <a href="#" title="Início da página"><p>Início</p></a>
+                <a href="#mouse"><p>Sobre</p></a>
+                <a href="#endereço"><p>Endereço</p></a>
+                <a class="botao" href="mailto.example@email.com"><p>Contate-nos</p></a>
+            </nav>
+            <a class="menu-barras" href="javascript: void(0)" onclick="mostrarMenu()">
+                <i id="icone-menu" class="fas fa-bars"></i>
+            </a>
         </div>
-        <div class="carousel-item active">
-            <img src="corr.jpg.crdownload" class="d-block w-100" alt="banner 3"/>
-    </div>
-
-    <button
-          class="carousel-control-prev"
-          data-bs-target="#carouselExampleInterval"
-          type="button"
-          data-bs-slide="prev"
-       >
-       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-       <span class="visually-hidden">Previous</span>
-    </button> 
-    <button
-          class="carousel-control-next"
-          data-bs-target="#carouselExampleInterval"
-          type="button"
-          data-bs-slide="prev"
-       >
-       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-       <span class="visually-hidden">Next</span>
-    </button>     
-    </div>     
-    <!--fim do Carousel da Página-->
-
-    <!--Início Banner-->
-    <div class="section-banner-home">
-        <div class="container-fluid">
-            <div class="row-m-0">
-                <div class="col-12-md-6">
-                    </figure>
-                    <img src="" class="img-fluid" alt="banner-home">
-                </figure>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="texto-banner">
+                <div class="container-grid conteudo-banner">
+                <h1>Cursos técnicos Senai</h1>
+                <div class="linha-amarela"></div>
+                <span class="titulo-senai">Senai Informática</span>
+                <img class="mouse" id="mouse" src="./img/mouse-down.png">
                 </div>
-                <div>
-                    <div class="col-12 col-md-6">
-                        <section class="texto-banner d-none d-md-block">
-                            <h1>ingressos neo química</h1>
-                            <p class="d-none d-md-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ad ipsa vel error numquam eligendi, maxime nam porro ipsum. Quisquam distinctio harum quidem nihil qui aliquid illo quia libero a!</p>
-                            <a href="index.html">saiba mais</a>
-                        </section>           
-
+            </div>
+        </div>
+        <section class="sobre-projetos">
+            <div class="container-grid">
+                <h2>Sobre projetos</h2>
+                <div class="conteudo-sobre">
+                    <img class="imagem-sobre" src="./img/imagem-seção-sobre.jpg" alt="kkkkkkk maguire">
+                    <div class="texto-sobre">
+                        <span class="texto-participantes">Participantes</span>
+                        <h3>Mais de 80 alunos organizados em 16 grupos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos omnis, nihil quibusdam vero, suscipit distinctio eos praesentium molestias placeat quaerat deleniti voluptates earum? Cupiditate provident maxime eius veritatis quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, itaque labore voluptates quisquam eaque aut nemo ratione animi cupiditate repellat fuga facilis alias ab. Sapiente ipsam delectus alias placeat minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt corrupti vel quam sit quos aperiam quia ipsa ullam nesciunt, nam, quasi impedit, quibusdam eligendi consequuntur maxime ducimus repellendus iusto.</p>
                     </div>
                 </div>
             </div>
-        </div>       
-    </div>
-    <!--fim do banner-->
-<!--início Destaque-->
-<div class="destaque">
-    <div class="container">
-        <div class="pow-d-flex justify-content-center">
-    <!--início da tag section do texto destaque-->
-<section class="col-12">
-    <h2>ingressos</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum, dolore explicabo inventore debitis dolores vel doloribus temporibus provident? Doloremque aspernatur molestias aliquam error autem hic saepe est magnam officiis.</p>
-</section>
-<!--Fim da tag section do texto destaque-->
-
-<!--Início da imagem 1-->
-
-<div class="col-6 col-md-2 pr-0">
-    <figure>
-        <a href="index.html"><img src="img/ao.webp"
-            alt="galeria" width="100%"></a>
-            <figcaption>ingresso <br></figcaption>
-    </figure>
-</div>
-<!--Fim da imagem 1-->
-<!--Início da imagem 2-->
-<div class="col-6 col-md-2 pr-0">
-    <figure>
-        <a href="index.html"><img src="img/tim.htm"
-            alt="galeria" width="100%"></a>
-            <figcaption>ingresso <br></figcaption>
-    </figure>
-</div>
-<!--Fim da imagem 2-->
-<!--Início da imagem 3-->
-<div class="col-6 col-md-2 pr-0">
-    <figure>
-        <a href="index.html"><img src="img/cor.jpg"
-            alt="galeria" width="100%"></a>
-            <figcaption>ingresso <br></figcaption>
-    </figure>
-</div>
-<!--Fim da imagem 3-->
-<!--Início da imagem 4-->
-<div class="col-6 col-md-2 pr-0">
-    <figure>
-        <a href="index.html"><img src="img/tim.htm"
-            alt="galeria" width="100%"></a>
-            <figcaption>ingresso <br></figcaption>
-    </figure>
-</div>
-<!--Fim da imagem 4-->
-<!--Início da imagem 5-->
-<div class="col-6 col-md-2 pr-0">
-    <figure>
-        <a href="index.html"><img src="img/2017.jpg"
-            alt="galeria" width="100%"></a>
-            <figcaption>ingresso <br></figcaption>
-    </figure>
-</div>
-<!--Fim da imagem 5-->
- <div class="col-12">
-     <a href="#">Saiba mais</a>
- </div>
-</div>     
-
-
-<!--Início do texto das novidades-->
-<div class="novidades">
-   <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-            <section class="text-body">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil molestias quidem sit quod reiciendis laudantium vitae eveniet. Itaque earum voluptates voluptas amet, repellendus totam tenetur eligendi cum illum impedit! Consequatur.</p>
-                <a class="btm-banner" href="#" target="_blank">Saiba mais.</a>
-            </section>
-        </div>
-        <!--fim do Texto das Novidades-->
-        <!--Início da imagem novidades-->
-        <div class="col-md-6">
-            <figure>
-                <img src="img/corr.htm"class="img-fluid" alt="banner-home">
-            </figure>
-        </div>
-     <!--Fim da Imagem Novidades-->
-      </div>    
-   </div>
-   <!--Início Galeria-->
-   <div class="galeria-d-flex align-itens-center">
-       <div class="container">
-           <div class="row">
-               <!--Início texto galeria-->
-               <div class="texto-galeria">
-            <section>
-               <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis enim sunt ducimus quidem iure earum nemo voluptatibus in, officiis sit minus consequuntur! Quis tenetur dignissimos ducimus accusamus suscipit soluta unde!</h2>
-            </section>
-           </div>
-           <!--Fim texto galeria-->
-           <!--Início da imagem 1 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/fut.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 1 galeria-->
-           <!--Início da imagem 2 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/fut.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 1 galeria-->
-           <!--Início da imagem 2 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/fut.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 2 galeria-->
-           <!--Início da imagem 3 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/fut.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 3 galeria-->
-           <!--Início da imagem 4 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/fut.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 4 galeria-->
-           <!--Início da imagem 5 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/fut.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 5 galeria-->
-           <!--Início da imagem 6 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/fut.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 6 galeria-->
-           <!--Início da imagem 7 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/boll.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 7 galeria-->
-           <!--Início da imagem 8 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/boll.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 8 galeria-->
-           <!--Início da imagem 9 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/boll.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 9 galeria-->
-           <!--Início da imagem 10 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/boll.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-
-       <!--Fim da imagem 10 galeria-->
-           <!--Início da imagem 11 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/boll.jpg" class="img-fluid" alt="img-galeria">
-
-       </div>
-       <!--Fim da imagem 11 galeria-->
-           <!--Início da imagem 12 galeria-->
-           <div class="gallery col-6 col-md-3">
-              <img src="img/boll.jpg" class="img-fluid" alt="img-galeria">
-       </div>
-       <!--Fim da imagem 12 galeria-->
-   </div>
-       <!--Fim da Galeria-->
-    <!--Início Footer-->
-    <footer class="rodape">
-        <div class="container">
-            <div class="row m-0">
-                <!--Início do logo-->
-                <div class="col-md-4">
-                    <figure>
-                        <img src="img/" alt="logo_rodape" width="40%">
-                    </figure>
+        </section>
+        <section class="info">
+            <div class="container-grid conteudo-info">z
+                <div class="card-info">
+                    <h3>Local</h3>
+                    <p>São Paulo</p>
                 </div>
-                <!--Fim do Logo-->
-                <div class="info-contato">
-                    <p>Email:</p>
-                    <p>example@corp.mat</p><br>
-                    <p>Endereço:</p>
-                    <p>Avenida ABC, 123</p><br>
-                    <p>Telefone:</p>
-                    <p>(15) 99999-5857</p>
+                <div class="card-info">
+                    <h3>desafios</h3>
+                    <p>+30 Desafios</p>
                 </div>
             </div>
-            <!--Fim do Texto-->
-            <!--Início das mídias sociais-->
-            <div class="col-md-4">
-                <figure class="redes-sociais">
-                    <!--alt + shift + seta para baixo (duplica linha selecionada)-->
-                    <!--ctrl + space (mostra o caminho do objeto) dentro do src-->
+        </section>
+        <section class="endereco" id="endereco">
+            <div class="container-grid conteudo-endereco">
+                <h2>Endereço:</h2>
+                <div class="texto-endereco">
+                    <p>Alameda Barão de Limeira, 539 Santa Cecília, São Paulo - SP</p>
+                </div>
+                <div class="container-mapa">
 
-                    <a href="#"><img src="img/"></a>
-                    <a href="#"><img src="img/"></a>
-                    <a href="#"><img src="img/"></a>
-                    <a href="#"><img src="img/"></a>
-                </figure>
-                <br>
-                <a href="index.html">Home</a><br>
-                <a href="index.html">Ingresso</a><br>
-                <a href="index.html">Agenda</a><br>
+                
+                    <iframe class="mapa-responsivo" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14637.110026353093!2d-47.448846!3d-23.486512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ead928c70b1e690!2sEscola%20e%20Faculdade%20de%20Tecnologia%20SENAI%20Gaspar%20Ricardo%20J%C3%BAnior!5e0!3m2!1spt-BR!2sbr!4v1654214874226!5m2!1spt-BR!2sbr" width="750" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="container-video">
+                    <iframe class="video-responsivo" width="560" height="315" src="https://www.youtube.com/embed/grHgGihpHT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
             </div>
-        </div>
-    </footer>
+        </section>
+        <footer>
+            <span>Copyright &copy; 2022 - Escola Senai de Informática</span>
+        </footer>
+    </main>
 
-    
 </body>
-  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js">
-  </script>
-
-  <script type="text/javascript" src="js"
+<script src="./js/mostrarMenu.js"></script>
 </html>

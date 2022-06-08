@@ -1,0 +1,230 @@
+/*aula 12(17/05/22)*/
+body,ul{
+    margin: 0px;
+    padding: 0px;
+}
+#menu a{
+    color: black;
+    text-decoration: none;
+    font-family:sans-serif ;   
+}
+a:hover{
+    background: blue;
+
+}
+#logo{
+    font-size: 1.5rem;
+}
+#header{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #505050;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    gap: 0.5;
+}
+#btn-mobile{
+    display: none;
+}
+#carouselExampleInterval{
+    position: relative;
+    z-index: 10;
+    padding-top: 80px;
+}
+/**Começo da responsivida Menu Hamburguer*/
+@media screen and (max-widht: 600px){
+   #menu{
+       display: block;
+       position: absolute;
+       width: 15em;
+       top: 70px;
+       right: 0px;
+       background: black;
+       transition: 0.6s;
+       z-index: 1000;
+       height: 0px;
+       padding-left: 5px;
+       visibility: hidden;
+       overflow-y: hidden;
+   } 
+   #menu li{
+       padding-top: 30px;
+       padding-bottom: 0px;
+       margin: 0 1rem;
+       border-bottom: 2px solid black rgba(0, 0, 0, 0.05);
+   }
+   #nav.active #menu {
+       height: calc(100vh - 70px);
+       visibility: visible;
+       overflow-y: hidden;
+   }
+   #btn-mobile {
+       display: flex;
+       padding: 0.5rem 1rem;
+       font-size: 1rem;
+       border: none;
+       background: none;
+       cursor: pointer;
+       gap: 0.5rem;
+   }
+   #hamburguer {
+       border-top: 2px solid;
+       width: 25px;
+       color: black;
+   }
+   #hamburguer::after,
+   #hamburguer::before {
+       content: "";
+       display: block;
+       width: 25px;
+       height: 2px;
+       background: #505050;
+       margin-top: 5px;
+       transition: 0.3s;
+       position: relative;
+   }
+   #nav.active #hamburguer {
+       border-top-color: transparent;
+   }
+   #nav.active #hamburguer ::before {
+       transform: rotate(135deg);
+   }
+   #nav.active #hamburguer::after {
+       transform: rotate(135deg);
+       top: -7px;
+   }
+}
+
+
+#img{
+    width: 65px;
+    height: 65px;
+}
+/**CSS Banner*/
+.section-banner-home img{
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    background-color: black;
+}
+.section-banner-home img{
+    height: 400px;
+}
+.section-banner-home .texto-banner h1{
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px; 
+}
+.section-banner-home .texto-banner p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.section-banner-home .texto-banner a{
+    color: #505050;
+    text-decoration: none;
+    background-color: cornsilk;
+    padding: 4px 14px;
+    font-size: 15px;
+}
+
+/* css destaque*/
+.destaque h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 50px auto;
+}
+.destaque figcaption {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.destaque a{
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: dimgrey;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+/* CSS novidades*/
+
+.novidades .text body{
+    width:80% ;
+    margin: 70px auto;
+}
+
+.novidades h2{
+    color: aliceblue;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p{
+    color: #505050;
+}
+.novidades a{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    padding: 0px 12px;
+    background-color: black;
+    font-weight: 400;
+}
+/* CSS Galeria*/
+.galeria{
+    margin: 60px auto 20px;
+}
+.galeria h2{
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+/* CSS Footer*/
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .info-contato p{
+    margin: 0px;
+}
+.rodape a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img{
+    width: 45px;
+    height: 40px;
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}

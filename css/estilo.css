@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=bebas=Neue&display=swap');
+
+*{
+    margin: 0; 
+     padding: 0; 
+     box-sizing: border-box ;
+}
+body {
+    font-family:'Bebas Neue';
+}
+.container-grid {
+    width: 85%;
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+header{
+    z-index: 1;
+    background-color: #00aeff;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+}
+.conteudo-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.logo {
+    height: 40px;
+}
+
+.menu-header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25cm;
+    transition: 0.5s;
+}
+
+.menu-header a:hover:not(.botao) {
+    font-size: 1.6cm;
+    transition: 0.3s;
+    text-shadow: 4px 4px 6px black;
+}
+
+.botao {
+    background-color: rgb(3, 146, 212);
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.5cm !important;
+    border: solid 1px rgb(255, 255, 255); 
+}
+
+.botao:hover {
+    font-size: 1.6cm !important;
+    height:50px ;
+    line-height: 50px;
+    width: 160px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px rgb(255, 255, 255);
+}
+
+.menu-barras {
+    display: none;
+}
+
+.banner {
+    background-image: url(../img/imagem-fundo-banner.jpg);
+    height: 768px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo-banner {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+.texto-banner {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-around;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+}
+
+.linha-amarela {
+    border: solid 1px #00aeff;
+}
+
+.titulo-senai {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.mouse{
+    width: 80px;
+}
+.sobre-projetos {
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sobre-projetos h2 {
+    color: rgb(3, 146, 212);
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.conteudo-sobre {
+    display: flex;
+    justify-content: space-between;
+}
+.imagem-sobre {
+    width: 40%;
+}
+
+.texto-participantes {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+.conteudo-sobre h3 {
+    color:rgb(3, 146, 212);
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.texto-sobre p {
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.info {
+    background-image: url(../img/imagem-fundo-info.jpg); background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.conteudo-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.card-info h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.card-info p {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border: solid 2px rgb(3, 146, 212);
+    width: 250px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.endereco {
+    padding: 40px 0;
+    background-image: url(../img/mapa.png)
+}
+
+.conteudo-endereco {
+    margin: 0 auto;
+    max-width: 850px;
+    position: relative;
+}
+
+.conteudo-endereco h2 {
+    color:#FFFFFF;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.texto-endereco {
+    color: rgb(3, 146, 212);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #caec05;
+    border: solid 2px #caec05;
+    padding: 55px 53px;
+}
+
+.texto-endereco p {
+    width: 400px;
+    font-size: 20px;
+}
+
+.container-mapa {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   padding-top: 20%;
+}
+
+.mapa-responsivo {
+position: absolute;
+margin-top: 10px;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+}
+
+.mapa-center {
+    width: auto;
+
+}
+.container-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 20%;
+}
+
+
+.video-responsivo {
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    height: 90px;
+    background-color: red;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    text-align: center;
+}
