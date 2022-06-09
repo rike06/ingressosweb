@@ -16,7 +16,7 @@ body {
 
     header{
         z-index: 1;
-        background-color: rgb(3, 146, 212)
+        background-color: red;
         height: 80px;
         position: fixed;
         width: 100vw;
@@ -50,6 +50,17 @@ body {
         font-size: 1.6cm;
         transition: 0.3s;
         text-shadow: 4px 4px 6px black;
+    }
+
+    .whatsapp {
+        position: fixed;
+        z-index: 2;
+        top: 200px;
+        right: 40px;
+    }
+
+    .whatsapp img {
+        height: 60px;
     }
 
     .botao {
